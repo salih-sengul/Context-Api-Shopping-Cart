@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import './index.css';
-import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-<BrowserRouter basename={"/Context-Api-Shopping-Cart"}>
+<HashRouter>
   <App />
-</BrowserRouter>
+</HashRouter>
 );
