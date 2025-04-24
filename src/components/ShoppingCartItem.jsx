@@ -12,7 +12,7 @@ const Item = (props) => {
         <h2>{props.title}</h2>
         <p>$ {props.price}</p>
         <button onClick={() => removeItem(props.index)}>
-          Remove from cart
+          Remove from Cart
         </button>
       </ScCartItemDetails>
     </ScCartItem>
