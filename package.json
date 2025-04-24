@@ -1,5 +1,6 @@
 {
   "name": "vite-react-starter",
+  "homepage": "https://salih-sengul.github.io/Context-Api-Shopping-Cart/",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -9,7 +10,9 @@
     "preview": "vite preview",
     "test": "vitest",
     "backend": "node src/mocks/api.js",
-    "wit": "concurrently 'npm run dev' 'npm run test'"
+    "wit": "concurrently 'npm run dev' 'npm run test'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "jest": {
     "verbose": true
@@ -17,6 +20,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^6.2.0",
     "concurrently": "^8.2.2",
+    "gh-pages": "^6.3.0",
     "mutationobserver-shim": "^0.3.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
